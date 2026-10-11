@@ -1,6 +1,8 @@
-# LiveSwap
+# SwapMeMaybe
 
 A macOS client and persistent Nosana GPU worker for delayed upper-body clothing replacement. The client preserves the original camera outside the garment mask and sends synchronized video and microphone audio to OBS.
+
+The Python package and command-line tool use the name `liveswap`.
 
 See the [submission draft](submission.md) for the project overview, build summary, attribution, and judge try-it instructions. Recorded local validation results are in [artifacts/validation.json](artifacts/validation.json).
 
@@ -51,4 +53,4 @@ The default OBS transport is localhost TCP/MPEG-TS because the available FFmpeg 
 | `tests/` | Contract, transport, lifecycle, overlap, masking, and deadline checks |
 | `PLAN.md` | Agreed stages and validation record |
 
-Existing `downloader/` files are unrelated and are not used or modified by LiveSwap.
+Existing `downloader/` files are unrelated and are not used or modified by SwapMeMaybe.

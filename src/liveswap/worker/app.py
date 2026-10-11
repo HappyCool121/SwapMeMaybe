@@ -67,8 +67,8 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     root.mkdir(parents=True, exist_ok=True)
     marker = root / ".liveswap-worker-owned"
     if not marker.exists() and any(root.iterdir()):
-        raise ValueError("worker data_dir must be empty or previously owned by LiveSwap; use a dedicated directory")
-    marker.write_text("LiveSwap temporary worker data\n")
+        raise ValueError("worker data_dir must be empty or previously owned by SwapMeMaybe; use a dedicated directory")
+    marker.write_text("SwapMeMaybe temporary worker data\n")
     ownership = (root / "worker.lock").open("a")
     try:
         fcntl.flock(ownership, fcntl.LOCK_EX | fcntl.LOCK_NB)
@@ -124,7 +124,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
             fcntl.flock(ownership, fcntl.LOCK_UN)
             ownership.close()
 
-    app = FastAPI(title="LiveSwap worker", lifespan=lifespan, docs_url=None, redoc_url=None)
+    app = FastAPI(title="SwapMeMaybe worker", lifespan=lifespan, docs_url=None, redoc_url=None)
     app.state.worker_state, app.state.jobs = state, jobs
 
     @app.middleware("http")

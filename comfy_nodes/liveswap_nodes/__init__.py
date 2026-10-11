@@ -26,7 +26,7 @@ class LiveSwapLoadWindow:
 
     RETURN_TYPES = ("IMAGE", "MASK", "IMAGE")
     FUNCTION = "load"
-    CATEGORY = "LiveSwap"
+    CATEGORY = "SwapMeMaybe"
 
     @classmethod
     def IS_CHANGED(cls, **kwargs):
@@ -59,7 +59,7 @@ class LiveSwapSaveFrames:
     RETURN_TYPES = ()
     FUNCTION = "save"
     OUTPUT_NODE = True
-    CATEGORY = "LiveSwap"
+    CATEGORY = "SwapMeMaybe"
 
     def save(self, images, job_id, quality):
         check_job(job_id)

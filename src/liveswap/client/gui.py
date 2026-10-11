@@ -65,13 +65,13 @@ class Runner(QThread):
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("LiveSwap — delayed clothing replacement")
+        self.setWindowTitle("SwapMeMaybe — delayed clothing replacement")
         self.resize(1060, 900)
         self.runner = None
         self.closing = False
         container = QWidget()
         layout = QVBoxLayout(container)
-        title = QLabel("LiveSwap")
+        title = QLabel("SwapMeMaybe")
         title.setStyleSheet("font-size: 26px; font-weight: 600;")
         layout.addWidget(title)
         layout.addWidget(QLabel("One garment · one person · fixed-delay camera and microphone for OBS"))

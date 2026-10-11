@@ -24,7 +24,7 @@ Local desktop prototype; use the setup instructions below. No public deployment 
 
 ### GitHub / source code
 
-[LiveSwap source code on GitHub](https://github.com/HappyCool121/liveswap-submission)
+[SwapMeMaybe source code on GitHub](https://github.com/HappyCool121/SwapMeMaybe)
 
 ### Figma / prototype (optional)
 
@@ -38,7 +38,7 @@ Prerequisites: macOS, `uv`, and FFmpeg. Download the source, open a terminal in 
 
 ```sh
 uv sync --extra client --extra worker --extra dev
-uv run --all-extras SwapMeMaybe demo --duration 6 --out artifacts/demo.mp4
+uv run --all-extras liveswap demo --duration 6 --out artifacts/demo.mp4
 ```
 
 Open `artifacts/demo.mp4`. This generates a six-second synthetic transport demo with silent audio. It exercises local processing and output without accessing a camera, microphone, or rented GPU; it does not demonstrate clothing replacement.

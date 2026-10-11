@@ -1,4 +1,4 @@
-# LiveSwap installation and deployment
+# SwapMeMaybe installation and deployment
 
 This guide deploys the client on an Apple Silicon Mac and the diffusion/interpolation worker on Nosana NVIDIA GPUs. Begin with one GPU and measure it before provisioning a pool.
 
@@ -26,8 +26,8 @@ Startup time is separate from camera-to-OBS delay. The latter applies once model
 Clone the submission repository and open its directory:
 
 ```sh
-git clone https://github.com/HappyCool121/liveswap-submission.git
-cd liveswap-submission
+git clone https://github.com/HappyCool121/SwapMeMaybe.git
+cd SwapMeMaybe
 ```
 
 If the tools are missing, install `uv` and FFmpeg with your package manager. On macOS with Homebrew:
