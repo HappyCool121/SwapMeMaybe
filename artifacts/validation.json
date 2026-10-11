@@ -1,0 +1,41 @@
+{
+  "tests": {
+    "tests": 46,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "ruff": "passed",
+  "wheel_build": "passed",
+  "nosana_openapi_validation": "passed",
+  "media_pipe_models": "loaded and executed on synthetic input",
+  "tcp_video_audio_integration": "passed; 720p24 H.264, mono 48kHz AAC, start-time alignment <50ms",
+  "five_minute_transport": {
+    "session_id": "dfb3efe62cb0474f8bfd8b3803dee2f1",
+    "captured_frames": 7200,
+    "played_frames": 7200,
+    "edited_frames": 7199,
+    "missing_frames": 1,
+    "tracking_misses": 1,
+    "submitted_windows": 277,
+    "completed_windows": 277,
+    "dropped_windows": 0,
+    "failed_windows": 0,
+    "last_error": null,
+    "peak_source_frames": 120,
+    "phase": "Stopped",
+    "fixed_delay_seconds": 5.0,
+    "backend": "mock",
+    "profile_id": "c0e77c88d299602343b6270a11154cc1f7defc7d9acb409f60c34d51fae8687d",
+    "max_playback_lateness_seconds": 0.10600916600014898,
+    "measured_useful_fps": 73.22,
+    "audio_status_events": 0
+  },
+  "not_run": [
+    "Docker image execution (daemon offline)",
+    "NVIDIA VACE/RIFE inference (GPU and weights required)",
+    "Nosana live GPU benchmark and cost",
+    "physical camera/microphone and OBS latency/sync",
+    "two-hour live soak"
+  ]
+}
